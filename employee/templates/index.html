@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Home — Employee{% endblock %}
+
+{% block content %}
+    <div class="py-4 text-center">
+        <h1 class="display-5">Office Employee Management System</h1>
+        <p class="lead">Quickly view, add, remove or filter employee records.</p>
+        <div class="d-flex justify-content-center gap-2 mt-3">
+            <a class="btn btn-lg btn-primary" href="{% url 'all_emp' %}">View Employees</a>
+            <a class="btn btn-lg btn-outline-primary" href="{% url 'add_emp' %}">Add Employee</a>
+        </div>
+    </div>
+{% endblock %}
